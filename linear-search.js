@@ -5,6 +5,13 @@ function linearSearch(array, searchTerm) {
 	 **
 	 ** Return the index of the found element
 	 */
+	for (let i = 0; i < array.length;) {
+		if(array[i] == searchTerm) {
+			return i;
+		} else {
+			i++
+		}
+	}
 
 	return null;
 }
