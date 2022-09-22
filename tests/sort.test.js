@@ -1,6 +1,7 @@
 const insertionSort = require("../insertion-sort");
 const selectionSort = require("../selection-sort");
 const bubbleSort = require("../bubble-sort");
+const binarySort = require("../binary-sort");
 const SortTester = require("./SortTester");
 
 describe("insertion sort", () => {
@@ -54,3 +55,20 @@ describe("bubble sort", () => {
 		SortTester.testEqualArray(bubbleSort);
 	});
 });
+// describe("binary sort", () => {
+// 	it("should work for simple cases", () => {
+// 		SortTester.testSimpleCases(binarySort);
+// 	});
+// 	it("should work for empty arrays", () => {
+// 		SortTester.testEmptyArray(binarySort);
+// 	});
+// 	it("should work for arrays with negative values", () => {
+// 		SortTester.testNegatives(binarySort);
+// 	});
+// 	it("should work for arrays that are already sorted", () => {
+// 		SortTester.testSortedArray(binarySort);
+// 	});
+// 	it("should work for arrays that have all the same value", () => {
+// 		SortTester.testEqualArray(binarySort);
+// 	});
+// });

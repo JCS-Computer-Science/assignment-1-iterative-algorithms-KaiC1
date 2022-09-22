@@ -1,8 +1,10 @@
 const insertionSort = require("./insertion-sort");
 const selectionSort = require("./selection-sort");
 const bubbleSort = require("./bubble-sort");
+const binarySort = require("./binary-sort");
 const linearSearch = require("./linear-search");
 const binarySearch = require("./binary-search");
+
 
 const sortTestArraySize = 10;
 const sortTestArray = Array.from({ length: sortTestArraySize }, () =>
@@ -19,6 +21,9 @@ console.log(`Selection Sort: \n${selectionResult}`);
 
 let bubbleResult = bubbleSort([...sortTestArray]);
 console.log(`Bubble Sort: \n${bubbleResult}`);
+
+let binaryResult = binarySort([...sortTestArray]);
+console.log(`Binary Sort: \n${binaryResult}`);
 
 console.log("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n");
 
@@ -48,3 +53,4 @@ let binarySearchResults = binarySearch(
 	searchTestTerm
 );
 console.log(`Result: ${binarySearchResults}`);
+console.log("hi");
